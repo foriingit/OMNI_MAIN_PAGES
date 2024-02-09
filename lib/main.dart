@@ -1,8 +1,11 @@
+import 'package:scratch/change_password.dart';
+
 import 'bars/bottom_bar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'chat.dart';
 import 'settings.dart';
+import 'change_password.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatefulWidget {
   @override
@@ -46,8 +49,8 @@ class _MyAppState extends State<MyApp> {
 
                 alignment: Alignment.center,
                 child:getSelectedWidget(index: index))
-        ),
 
+        ),
     );
   }
 }
