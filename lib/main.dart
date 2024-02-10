@@ -3,7 +3,7 @@ import 'package:scratch/change_password.dart';
 import 'bars/bottom_bar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'chat.dart';
+import 'Chat/chatPage.dart';
 import 'settings.dart';
 import 'change_password.dart';
 void main() => runApp(MyApp());
@@ -191,7 +191,7 @@ Widget getSelectedWidget ({required int index}){
   Widget widget;
   switch(index){
     case 0:
-      widget= const Chat();
+      widget=  ChatPage();
       break;
     case 1:
       widget = Carousel();
