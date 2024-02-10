@@ -1,4 +1,5 @@
 import 'package:scratch/change_password.dart';
+import 'package:scratch/edit_profile.dart';
 
 import 'bars/bottom_bar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';

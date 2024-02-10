@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
+import 'package:adaptive_action_sheet/adaptive_action_sheet.dart';
+
 class Edit_profile extends StatelessWidget {
   const Edit_profile({super.key});
 
@@ -26,10 +28,23 @@ class Edit_profile extends StatelessWidget {
                             width: 35,
                             height: 35,
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(100), color: Colors.grey),
-                            child: const Icon(
-                              Icons.drive_file_rename_outline_sharp,
+                            child: IconButton(
+                              icon: Icon(Icons.drive_file_rename_outline_sharp,
                               color: Colors.black,
-                              size: 20,
+                              size: 20,),
+                              onPressed: (){
+                                showAdaptiveActionSheet(
+                                  context: context,
+                                  androidBorderRadius: 30,
+                                  actions: <BottomSheetAction>[
+                                    
+                                    BottomSheetAction(title: const Text('Select photo'), onPressed: (context) {}),
+                                    BottomSheetAction(title: const Text('Take a photo'), onPressed: (context) {}),
+                                    BottomSheetAction(title: const Text('Delete', style: TextStyle(color: Colors.red,)), onPressed: (context) {}),
+                                  ],
+                                  cancelAction: CancelAction(title: const Text('Cancel')),
+                                );
+                              },
                             ),
 
                           ),

@@ -42,8 +42,10 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                       ],
                     ),
                   ),
-                  Icon(Icons.more_vert,color: Colors.black54,),
-                ],
+                  IconButton(onPressed: (){
+
+                  }, icon:Icon(Icons.more_vert,color: Colors.black54,),
+                  )],
               ),
             ),
           ),
@@ -70,7 +72,7 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                       ),
                     ),
                   ),
-                  IconButton(icon: Icon(Icons.attach_file, color: Colors.orange, size: 30), onPressed: (){},),
+                  IconButton(icon: Icon(Icons.attach_file, color: Colors.orange, size: 30), onPressed: (){}),
                   SizedBox(width: 15,),
                   FloatingActionButton(
                     onPressed: (){},
